@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A page about dogs
-permalink: /dogs/
+title: A page about cats
+permalink: /cat/
 ---
-Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!  Here is a page about dogs!!
+A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.  A page about cats.
