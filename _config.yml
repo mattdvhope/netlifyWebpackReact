@@ -26,7 +26,7 @@ github_username:  jekyll
 
 source:       ./build
 destination:  ./_site
-layouts_dir:  ./_layouts
+layouts_dir:  ./build/_layouts
 
 # Build settings
 markdown: kramdown

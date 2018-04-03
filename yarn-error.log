@@ -3356,7 +3356,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit code: 2
   Command: sh
   Arguments: -c webpack --mode development
   Directory: /Users/matthewmalone/Sites/jekyll/netlifyWebpackReact
