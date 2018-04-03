@@ -9,7 +9,7 @@ media_folder: "images/uploads"
 collections:
   # - name: "post" # Used in routes, e.g., /admin/collections/post
   #   label: "Post"
-  #   folder: "_posts" # The path to the folder where the documents are stored
+  #   folder: "build/_posts" # The path to the folder where the documents are stored
   #   create: true # Allow users to create new documents in this collection
   #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   #   fields:
@@ -31,7 +31,7 @@ collections:
 
   # - name: "layouts"
   #   label: "Layouts"
-  #   folder: "_layouts"
+  #   folder: "build/_layouts"
   #   extension: "html"
   #   fields:
   #     - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
