@@ -20,7 +20,7 @@ collections:
 
   - name: "page"
     label: "Page"
-    folder: "_pages"
+    folder: "build/_pages"
     create: true
     # slug: ".md"
     fields:
