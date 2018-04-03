@@ -26,6 +26,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page"]}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Content Here", name: "content-here", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
