@@ -29,6 +29,7 @@ collections:
       - {label: "Content Here", name: "content-here", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+      # - {label: "Body", name: "body", widget: "markdown", required: false}
 
   # - name: "layouts"
   #   label: "Layouts"
