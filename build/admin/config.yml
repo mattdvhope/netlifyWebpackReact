@@ -32,6 +32,7 @@ collections:
   - name: "layouts"
     label: "Layouts"
     folder: "build/_layouts"
+    create: true
     extension: "html"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
