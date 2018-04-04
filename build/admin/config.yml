@@ -29,6 +29,16 @@ collections:
       - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
+  - name: "data"
+    label: "Data"
+    folder: "build/_data"
+    create: true
+    extension: "yml"
+    fields:
+      - {label: "Data", name: "data", widget: "hidden", default: "default"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
   - name: "layouts"
     label: "Layouts"
     folder: "build/_layouts"
