@@ -29,11 +29,13 @@ collections:
       - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
-  # - name: "layouts"
-  #   label: "Layouts"
-  #   folder: "build/_layouts"
-  #   extension: "html"
-  #   fields:
-  #     - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
-  #     - {label: "Title", name: "title", widget: "string", required: false}
-  #     - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "layouts"
+    label: "Layouts"
+    folder: "build/_layouts"
+    extension: "html"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+
+
