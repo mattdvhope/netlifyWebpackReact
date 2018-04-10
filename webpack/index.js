@@ -13,7 +13,7 @@ class App extends Component {
 render(<App />, document.getElementById('root'));
 
 
-fetch(`http://localhost:3000//off_site_locations`, {
+fetch(`https://cityenglishproject.com/class_times`, {
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'same-origin', // include, same-origin, *omit
     headers: {
