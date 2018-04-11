@@ -20,7 +20,8 @@ fetch(url, {
       // 'user-agent': 'Mozilla/4.0 MDN Example',
       'Accept': 'application/json',
       'content-type': 'application/json'
-    }
+    },
+    mode: 'cors', // no-cors, cors, *same-origin
 })
 .then(response => response.json())
 .then(res => console.log(res));
