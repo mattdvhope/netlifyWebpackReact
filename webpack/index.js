@@ -21,20 +21,20 @@ fetch(url)
 
 
 
-fetch(`https://enigmatic-castle-3874.herokuapp.com/class_times`, {
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, same-origin, *omit
-    headers: {
-      // 'user-agent': 'Mozilla/4.0 MDN Example',
-      'Accept': 'application/json',
-      'content-type': 'application/json'
-    },
-    mode: 'cors', // no-cors, cors, *same-origin
-    redirect: 'follow', // *manual, follow, error
-    referrer: 'no-referrer', // *client, no-referrer
-})
-.then(response => response.json())
-.then(res => console.log(res));
+// fetch(`https://enigmatic-castle-3874.herokuapp.com/class_times`, {
+//     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+//     credentials: 'same-origin', // include, same-origin, *omit
+//     headers: {
+//       // 'user-agent': 'Mozilla/4.0 MDN Example',
+//       'Accept': 'application/json',
+//       'content-type': 'application/json'
+//     },
+//     mode: 'cors', // no-cors, cors, *same-origin
+//     redirect: 'follow', // *manual, follow, error
+//     referrer: 'no-referrer', // *client, no-referrer
+// })
+// .then(response => response.json())
+// .then(res => console.log(res));
 
 
 
