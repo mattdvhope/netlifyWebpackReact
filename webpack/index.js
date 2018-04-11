@@ -13,9 +13,9 @@ class App extends Component {
 render(<App />, document.getElementById('root'));
 
 
-// const proxyurl = "https://enigmatic-castle-3874.herokuapp.com/class_times/";
-const url = "https://cityenglishproject.com/class_times"; // site that doesn’t send Access-Control-*
-fetch(url) // https://enigmatic-castle-3874.herokuapp.com/class_times/https://cityenglishproject.com/class_times
+const proxyurl = "https://enigmatic-castle-3874.herokuapp.com/class_times/";
+// const url = "https://cityenglishproject.com/class_times"; // site that doesn’t send Access-Control-*
+fetch(proxyurl) // https://enigmatic-castle-3874.herokuapp.com/class_times/https://cityenglishproject.com/class_times
 .then(response => response.json())
 .then(res => console.log(res));
 
