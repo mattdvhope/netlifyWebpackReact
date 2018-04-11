@@ -13,7 +13,7 @@ class App extends Component {
 render(<App />, document.getElementById('root'));
 
 
-fetch(`https://enigmatic-castle-3874.herokuapp.com/class_times`, {
+fetch(`https://enigmatic-castle-3874.herokuapp.com/class_times.json`, {
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'same-origin', // include, same-origin, *omit
     headers: {
