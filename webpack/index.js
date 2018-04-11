@@ -13,38 +13,28 @@ class App extends Component {
 render(<App />, document.getElementById('root'));
 
 
-const proxyurl = "https://enigmatic-castle-3874.herokuapp.com/class_times/";
-// const url = "https://cityenglishproject.com/class_times"; // site that doesn’t send Access-Control-*
-fetch(proxyurl) // https://enigmatic-castle-3874.herokuapp.com/class_times/https://cityenglishproject.com/class_times
+const url = `https://enigmatic-castle-3874.herokuapp.com/class_times/`;
+fetch(url)
 .then(response => response.json())
 .then(res => console.log(res));
 
 
-// fetch(`https://enigmatic-castle-3874.herokuapp.com/class_times`)
-// .then(response => response.json())
-// .then(res => console.log(res));
 
 
-
-
-
-
-
-
-// fetch(`https://enigmatic-castle-3874.herokuapp.com/class_times`, {
-//     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-//     credentials: 'same-origin', // include, same-origin, *omit
-//     headers: {
-//       // 'user-agent': 'Mozilla/4.0 MDN Example',
-//       'Accept': 'application/json',
-//       'content-type': 'application/json'
-//     },
-//     mode: 'cors', // no-cors, cors, *same-origin
-//     redirect: 'follow', // *manual, follow, error
-//     referrer: 'no-referrer', // *client, no-referrer
-// })
-// .then(response => response.json())
-// .then(res => console.log(res));
+fetch(`https://enigmatic-castle-3874.herokuapp.com/class_times`, {
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, same-origin, *omit
+    headers: {
+      // 'user-agent': 'Mozilla/4.0 MDN Example',
+      'Accept': 'application/json',
+      'content-type': 'application/json'
+    },
+    mode: 'cors', // no-cors, cors, *same-origin
+    redirect: 'follow', // *manual, follow, error
+    referrer: 'no-referrer', // *client, no-referrer
+})
+.then(response => response.json())
+.then(res => console.log(res));
 
 
 
