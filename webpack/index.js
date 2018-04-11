@@ -14,7 +14,14 @@ render(<App />, document.getElementById('root'));
 
 
 const url = `https://enigmatic-castle-3874.herokuapp.com/class_times/`;
-fetch(url)
+
+fetch(url, {
+    headers: {
+      // 'user-agent': 'Mozilla/4.0 MDN Example',
+      'Accept': 'application/json',
+      'content-type': 'application/json'
+    }
+})
 .then(response => response.json())
 .then(res => console.log(res));
 
