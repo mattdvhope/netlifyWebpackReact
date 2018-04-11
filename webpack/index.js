@@ -17,6 +17,7 @@ const url = `https://enigmatic-castle-3874.herokuapp.com/class_times/`;
 
 fetch(url, {
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, same-origin, *omit
     headers: {
       // 'user-agent': 'Mozilla/4.0 MDN Example',
       'Accept': 'application/json',
