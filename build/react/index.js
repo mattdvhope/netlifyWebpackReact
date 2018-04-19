@@ -23,7 +23,7 @@ render(<App />, document.getElementById('root'));
 
 
 
-const url = `http://localhost:3000/auth/login/`;
+const url = `enigmatic-castle-3874.herokuapp.com/auth/login/`;
 
 const data = {
     "email": "alex@test.tv",
