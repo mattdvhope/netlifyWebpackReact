@@ -5,7 +5,7 @@ class HelloAgain extends Component {
     return (
     	<div>
 	        <div id="userContainer">Hello AGAIN from React!!</div>
-	        <button type="button" class="btn btn-primary">Primary <span className="badge badge-secondary badge-pill">7</span></button>
+	        <button type="button" className="btn btn-primary">Primary <span className="badge badge-secondary badge-pill">7</span></button>
 	        <i className='fa fa-search'> here </i>
 	        <i className="far fa-address-book"></i>
 	    </div>
