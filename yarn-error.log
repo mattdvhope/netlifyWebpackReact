@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.9.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js run dev
+  /usr/local/Cellar/node/9.9.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js run build
 
 PATH: 
   /Users/matthewmalone/.sdkman/candidates/springboot/current/bin:/Users/matthewmalone/.sdkman/candidates/groovy/current/bin:/Users/matthewmalone/.rbenv/shims:/Users/matthewmalone/.rbenv/bin:/usr/local/git/bin:/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
@@ -3358,8 +3358,8 @@ Trace:
   Error: Command failed.
   Exit code: 2
   Command: sh
-  Arguments: -c webpack --mode development
-  Directory: /Users/matthewmalone/Sites/jekyll/netlifyWebpackReact
+  Arguments: -c webpack --mode production
+  Directory: /Users/matthewmalone/Sites/CEP v.2/netlifyWebpackReact
   Output:
   
       at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
