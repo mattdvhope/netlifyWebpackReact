@@ -1,52 +1,110 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import {render} from 'react-dom';
-import Hello from './Hello';
-import HelloAgain from './../HelloAgain';
-import 'bootstrap';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import YTSearch from 'youtube-api-search';
+import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
+import VideoDetail from './components/video_detail';
 require("./../style.css");
-require("./../styles/main.scss");
+
+const API_KEY = 'AIzaSyAOFcqc8AfwZ2VekUKP7wDkbfeFJ77IPCE';
 
 class App extends Component {
-  render() {
+  constructor(props) {
+  	super(props);
+
+  	this.state = { 
+  		videos: [],
+  		selectedVideo: null
+  	};
+
+  	this.videoSearch('surfboards');
+  }
+
+  videoSearch(term) {
+  	YTSearch({key: API_KEY, term: term}, (videos) => {
+		this.setState({ // 'setState()' can be used inside constructor
+			videos: videos,
+			selectedVideo: videos[0]
+		});
+	});
+  }
+
+  render() {			//debounce from lodash enables a delay of 300 miliseconds between searches as we type characters into the search bar
+  	const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
+
+  	// using 'props' in a class-based component requires 'this.props'
+	// using 'props' in a functional component is only 'props'
     return (
       <div>
-        <Hello />
-    	<HelloAgain />
+    	<SearchBar onSearchTermChange={videoSearch} />
+    	<VideoDetail video={this.state.selectedVideo} />
+    		   {/* videos is a 'prop'-- props.videos */}
+    	<VideoList
+    		onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+    		videos={this.state.videos} />
       </div>
-	)
+	);
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.querySelector('.container'));
 
 
 
 
 
-const url = `enigmatic-castle-3874.herokuapp.com/auth/login/`;
 
-const data = {
-    "email": "alex@test.tv",
-    "password": "password",
-};
+// import React, { Component } from 'react';
 
-fetch(url, {
-    body: JSON.stringify(data), // must match 'Content-Type' header
-    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'same-origin', // include, same-origin, *omit
-    headers: {
-      // 'user-agent': 'Mozilla/4.0 MDN Example',
-      'Accept': 'application/json',
-      'content-type': 'application/json' //,
-      // 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
-    },
-    method: 'POST', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, cors, *same-origin
-    redirect: 'follow', // *manual, follow, error
-    referrer: 'no-referrer' // *client, no-referrer
-})
-.then(response => response.json())
-.then(res => console.log(res));
+// import SearchBar from './components/search_bar';
+
+// import {render} from 'react-dom';
+// import HelloAgain from './../HelloAgain';
+// import 'bootstrap';
+// require("./../style.css");
+// require("./../styles/main.scss");
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//     	<HelloAgain />
+//       </div>
+// 	)
+//   }
+// }
+
+// render(<App />, document.getElementById('root'));
+
+
+
+
+// const url = `enigmatic-castle-3874.herokuapp.com/auth/login/`;
+
+// const data = {
+//     "email": "alex@test.tv",
+//     "password": "password",
+// };
+
+// fetch(url, {
+//     body: JSON.stringify(data), // must match 'Content-Type' header
+//     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+//     credentials: 'same-origin', // include, same-origin, *omit
+//     headers: {
+//       // 'user-agent': 'Mozilla/4.0 MDN Example',
+//       'Accept': 'application/json',
+//       'content-type': 'application/json' //,
+//       // 'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+//     },
+//     method: 'POST', // *GET, POST, PUT, DELETE, etc.
+//     mode: 'cors', // no-cors, cors, *same-origin
+//     redirect: 'follow', // *manual, follow, error
+//     referrer: 'no-referrer' // *client, no-referrer
+// })
+// .then(response => response.json())
+// .then(res => console.log(res));
 
 
 

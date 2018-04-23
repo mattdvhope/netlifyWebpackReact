@@ -19,15 +19,19 @@
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.1.0",
     "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
     "node-sass": "^4.8.3",
     "popper.js": "^1.14.3",
     "react": "^16.3.0",
     "react-addons-update": "^15.6.2",
     "react-dom": "^16.3.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
-    "webpack": "^4.4.1"
+    "webpack": "^4.4.1",
+    "youtube-api-search": "^0.0.5"
   },
   "scripts": {
     "dev": "webpack --mode development",
