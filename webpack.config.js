@@ -3,7 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./build/react_rdx_intermed/index.js",
+    entry: "./build/react_router_rdx/index.js",
 	output: {
 	    path: path.resolve('./build'),
 	    filename: 'bundle.js'

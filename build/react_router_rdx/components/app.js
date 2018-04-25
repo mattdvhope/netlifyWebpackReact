@@ -1,0 +1,20 @@
+import React from 'react';
+import { Component } from 'react';
+import SearchBar from '../containers/search_bar';
+import WeatherList from '../containers/weather_list';
+import { createStore } from "redux";
+
+import rootReducer from '../reducers/index.js';
+
+const store = createStore(rootReducer);
+
+export default class App extends Component {
+	render() {
+		return (
+			<div>
+				<SearchBar />
+				<WeatherList />
+			</div>
+		);
+	}
+}
